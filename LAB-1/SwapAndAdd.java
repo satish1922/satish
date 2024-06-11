@@ -1,5 +1,3 @@
-package projectanudip;
-
 public class SwapAndAdd {
 
     public static void main(String[] args) {
