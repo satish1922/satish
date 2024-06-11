@@ -1,4 +1,3 @@
-package projectanudip;
 import java.io.*;
 public class AssignmentOperator {
 
