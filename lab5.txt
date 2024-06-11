@@ -1,0 +1,119 @@
+#EMPLOYEE
+class EMP {
+
+	  // Static variable to store the company name (common for all employees)
+	  static String companyName = "ANUDEEPMNC";
+
+	  public EMP(int eid, String ename) {
+	    this.eid = eid;
+	    this.ename = ename;
+	  }
+
+	  // Instance variables for employee id and name
+	  int eid;
+	  String ename;
+
+	  // Static method to get the company name
+	  public static String getCompanyName() {
+	    return companyName;
+	  }
+
+	  // (Optional) You can add getter methods for eid and ename if needed
+	}
+
+	public class EmployeeMain {
+
+	  public static void main(String[] args) {
+
+	    // Create employee objects
+	   EMP e1 = new EMP ( 90, "Marks");
+	    EMP e2 = new EMP(420, "DJTIllu");
+
+	    // Print employee details using static method to get company name
+	    System.out.println("Employee 1 Details:");
+	    System.out.println("ID: " + e1.eid);
+	    System.out.println("Name: " + e1.ename);
+	    System.out.println("Company: " + EMP.getCompanyName());
+
+	    System.out.println("\nEmployee 2 Details:");
+	    System.out.println("ID: " + e2.eid);
+	    System.out.println("Name: " + e2.ename);
+	    System.out.println("Company: " + EMP.getCompanyName());
+	  }
+	}
+___________________________________________________________________________________________________________
+#STUDENT INFORMATION
+
+public class StudentDetails {
+	    private int id;
+	    private String name;
+	    private boolean active;
+	    
+	    
+	    public StudentDetails(int id, String name, boolean active) {
+	        this.id = id;
+	        this.name = name;
+	        this.active = active;
+	    }
+
+	    // Getter methods
+	    public int getId() {
+	        return id;
+	    }
+
+	    public String getName() {
+	        return name;
+	    }
+
+	    public boolean isActive() {
+	        return active;
+	    }
+
+	    // Setter methods
+	    public void setId(int id) {
+	        this.id = id;
+	    }
+
+	    public void setName(String name) {
+	        this.name = name;
+	    }
+
+	    public void setActive(boolean active) {
+	        this.active = active;
+	    }
+
+	    // toString method (for debugging or printing)
+	    @Override
+	    public String toString() {
+	        return "Student{" +
+	                "id=" + id +
+	                ", name='" + name + '\'' +
+	                ", active=" + active +
+	                '}';
+	    }
+
+	    public static void main(String[] args) {
+	        // Example usage
+	        StudentDetails student = new StudentDetails(973, "Virat", true);
+	        System.out.println(student); // Print student details
+
+	        // Modify student details
+	        student.setId(143);
+	        student.setActive(false);
+	        System.out.println(student); // Print updated details
+	    }
+	}
+_____________________________________________________________________________________________________
+#NARROWCASTING
+
+public class NarrowCasting {
+	    public static void main(String[] args) 
+	    {
+	        double Raj = 143.143; 
+	        int Ratan = (int) Raj;
+
+	        System.out.println("Original double value: " + Raj);
+	        System.out.println("Narrowed int value: " + Ratan);
+	    }
+}
+
