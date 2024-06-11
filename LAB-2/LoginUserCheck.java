@@ -1,4 +1,3 @@
-package projectanudip;
 import java.util.Scanner;
 public class LoginUserCheck {
 
